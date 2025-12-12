@@ -1,0 +1,105 @@
+================================================================================
+FANSTEL LR62E - Altium Schematic Symbol Definition
+LoRa Module with Semtech SX1262 Transceiver
+================================================================================
+
+COMPONENT INFORMATION:
+----------------------
+Library Reference: LR62E
+Designator: U?
+Description: Fanstel LR62E LoRa Module (SX1262, 10.2x15mm, u.FL Antenna)
+Manufacturer: Fanstel
+Manufacturer Part Number: LR62E
+Package: 10-pin SMD (10.2x15.0x1.9mm)
+
+SYMBOL DIMENSIONS (Suggested):
+------------------------------
+Rectangle: 600 mil wide x 800 mil tall
+Pin Length: 200 mil
+Pin Spacing: 100 mil
+
+================================================================================
+PIN TABLE (10 pins)
+================================================================================
+
+Pin#  | Name        | Type      | SX1262 Pin | Description
+------|-------------|-----------|------------|---------------------------
+1     | ANT-SW      | Passive   | -          | Antenna switch
+2     | SX-NRESET   | Input     | 15         | Reset signal, active low
+3     | BUSY        | Output    | 14         | Busy indicator
+4     | DIO1        | IO        | 13         | Multiple purpose Digital IO
+5     | VDD         | Power     | 1          | DC input voltage, 1.8V to 3.7V
+6     | SCK         | Input     | 18         | SPI clock
+7     | MOSI        | Input     | 17         | SPI Slave input
+8     | MISO        | Output    | 16         | SPI Slave Output
+9     | NSS         | Input     | 19         | SPI Slave Select
+10    | GND         | Power     | 20         | Ground
+
+================================================================================
+SUGGESTED PIN GROUPINGS FOR SCHEMATIC SYMBOL
+================================================================================
+
+LEFT SIDE (Power & Control):
+----------------------------
+VDD         (5)   - Power
+GND         (10)  - Ground
+
+~SX-NRESET  (2)   - Reset (active low, use overbar)
+BUSY        (3)   - Status Output
+DIO1        (4)   - Interrupt/Status IO
+
+RIGHT SIDE (SPI Interface & Antenna):
+-------------------------------------
+SCK         (6)   - SPI Clock
+MOSI        (7)   - SPI Data In
+MISO        (8)   - SPI Data Out
+NSS         (9)   - SPI Chip Select
+
+ANT-SW      (1)   - Antenna Switch Control
+
+================================================================================
+ELECTRICAL SPECIFICATIONS
+================================================================================
+Supply Voltage: 1.8V to 3.7V
+Operating Temperature: -40C to +85C
+Module Size: 10.2 x 15.0 x 1.9 mm
+Pins: 10
+Antenna: u.FL connector for external antenna
+
+RF SPECIFICATIONS:
+- Frequency: 902-928 MHz (US ISM band)
+- TX Power: +20 dBm
+- RX Current: 4.2 mA
+- Modulation: LoRa, FSK
+
+TRANSCEIVER:
+- Semtech SX1262
+- Integrated matching network
+- Integrated DC-DC converter and LDO
+
+CERTIFICATIONS:
+- FCC ID: X8WLR62E
+- ISED ID: 4100A-LR62E
+
+================================================================================
+ALTIUM SCHEMATIC SYMBOL CREATION STEPS
+================================================================================
+
+1. Open Altium Designer
+2. File > New > Library > Schematic Library
+3. Place > Rectangle (600 mil x 800 mil)
+4. Place pins using the table above
+5. Set pin properties:
+   - Power pins (VDD, GND): Electrical Type = Power
+   - Reset (SX-NRESET): Electrical Type = Input
+   - BUSY: Electrical Type = Output
+   - DIO1: Electrical Type = I/O
+   - SPI pins (SCK, MOSI, NSS): Electrical Type = Input
+   - MISO: Electrical Type = Output
+   - ANT-SW: Electrical Type = Passive
+6. Add component parameters:
+   - Comment = LR62E
+   - Description = Fanstel LR62E LoRa Module SX1262
+7. Save as LR62E.SchLib
+
+================================================================================

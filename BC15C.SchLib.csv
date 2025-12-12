@@ -1,0 +1,37 @@
+Pin Number,Pin Name,Pin Type,Side,Description
+A1,P0.01,Passive,Left,GPIO
+A2,P0.00,Passive,Left,GPIO
+A3,SWDIO,Bidirectional,Left,Serial Wire Debug Data
+A4,SWDCLK,Input,Left,Serial Wire Debug Clock
+A5,P2.09,Passive,Left,GPIO
+A6,P2.05,Passive,Left,GPIO
+B1,P1.08,Passive,Left,GPIO
+B2,P0.03,Passive,Left,GPIO
+B3,P2.07,Passive,Left,GPIO
+B4,P1.07/AIN3,Passive,Left,GPIO/Analog Input
+B5,P1.05/AIN1,Passive,Left,GPIO/Analog Input
+B6,P1.06/AIN2,Passive,Left,GPIO/Analog Input
+C1,P2.10,Passive,Right,GPIO
+C2,P0.02,Passive,Right,GPIO
+C3,P1.09,Passive,Right,GPIO
+C4,P2.00,Passive,Right,GPIO
+C5,P1.04/AIN0,Passive,Right,GPIO/Analog Input
+C6,P2.01,Passive,Right,GPIO
+D1,P1.12/AIN5,Passive,Right,GPIO/Analog Input
+D2,P1.10,Passive,Right,GPIO
+D3,P2.08,Passive,Right,GPIO
+D4,P1.14/AIN7,Passive,Right,GPIO/Analog Input
+D5,P1.11/AIN4,Passive,Right,GPIO/Analog Input
+D6,P2.02,Passive,Right,GPIO
+E1,GND,Power,Left,Ground
+E2,P1.13/AIN6,Passive,Right,GPIO/Analog Input
+E3,P0.04,Passive,Right,GPIO
+E4,P2.03,Passive,Right,GPIO
+E5,P1.15,Passive,Right,GPIO
+E6,P1.02/NFC1,Passive,Right,GPIO/NFC Connection
+F1,GND,Power,Left,Ground
+F2,P2.06,Passive,Right,GPIO
+F3,~RESET,Input,Left,Reset (Active Low)
+F4,P1.03/NFC2,Passive,Right,GPIO/NFC Connection
+F5,P2.04,Passive,Right,GPIO
+F6,VDD,Power,Left,DC Power Supply 1.8-3.6V

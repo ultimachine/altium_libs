@@ -1,0 +1,10 @@
+[Design]
+Version=1.0
+HierarchyMode=0
+
+[Document1]
+DocumentPath=BC15C_CreateFootprint.pas
+AnnotationEnabled=1
+
+[Generic]
+ProjectType=Script

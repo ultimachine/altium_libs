@@ -1,0 +1,167 @@
+*********************************************************************
+*  TOSHIBA CORPORATION SEMICONDUCTOR & STORAGE PRODUCTS COMPANY
+*  Date                 : 07/11/2013
+*  File name            : SSM6N57NU.lib
+*  Part Number          : SSM6N57NU
+*  Parameter ver.       : Ver.2
+*  Simulator            : PSpice
+*  Model call name      : NMOS_SSM6N57NU
+*  TNOM                 : 25 degree
+*********************************************************************
+
+.SUBCKT NMOS_SSM6N57NU 1 2 3
+M0 1 22 3 3
++ smsmosfet
++ L = 5E-006
++ W = 0.3
++ AD = 3E-007
++ AS = 3E-007
++ PD = 0.6
++ PS = 0.6
+D0 3 1
++ DDS1
+D1 3 1
++ DDS2
+D2 2 10
++ DGS1
+D3 3 10
++ DGS2
+R1 10 3 1E+009
+R2 10 2 1E+009
+RG 2 22 4.5
+.MODEL smsmosfet NMOS
++ LEVEL = 7
++ MOBMOD = 1
++ CAPMOD = 3
++ NOIMOD = 1
++ TOX = 1.5E-008
++ XJ = 1.5E-007
++ NCH = 1.7E+017
++ NGATE = 0
++ RSH = 0
++ TNOM = 25
++ VTH0 = 0.83021
++ VOFF = 0
++ NFACTOR = 1.6589
++ U0 = 3999.4439
++ K1 = 0.5
++ K2 = 0
++ K3 = 80
++ K3B = 0
++ W0 = 2.5E-006
++ NLX = 1.74E-007
++ DVT0 = 2.2
++ DVT1 = 0.53
++ DVT2 = -0.032
++ DVT0W = 0
++ DVT1W = 5.3E+006
++ DVT2W = -0.032
++ DWG = 0
++ DWB = 0
++ UA = 1.5381e-09
++ UB = 5.87E-019
++ UC = -4.56E-011
++ VSAT = 35720.7501
++ A0 = 0.56721
++ AGS = 0.0010796
++ B0 = 0
++ B1 = 0
++ KETA = -0.047
++ A1 = 0
++ A2 = 1
++ DELTA = 0.01333
++ RDSW = 6227.81
++ PRWG = 0
++ PRWB = 0
++ WR = 1
++ CDSC = 0.00024
++ CDSCD = 0
++ CDSCB = 0
++ CIT = 0
++ ETA0 = 0.03434
++ ETAB = -0.07
++ DSUB = 0.56
++ PCLM = 1.0364
++ PDIBLC1 = 0.39
++ PDIBLC2 = 0.0046179
++ PDIBLCB = 0
++ DROUT = 0.56
++ PSCBE1 = 424000000
++ PSCBE2 = 1e-09
++ PVAG = 0
++ ALPHA0 = 0
++ ALPHA1 = 0
++ BETA0 = 30
++ NJ = 1
++ JS = 2.62E-007
++ XPART = 0
++ CGSO = 3.4086e-11
++ CGDO = 3.0685e-10
++ CGBO = 1E-012
++ CGDL = 3.1484e-09
++ CGSL = 4.7648e-10
++ CKAPPA = 3.2557
++ CF = 1E-012
++ CLC = 1E-007
++ CLE = 0.6
++ VOFFCV = 0
++ NOFF = 1
++ DLC = 0
++ ACDE = 1
++ MOIN = 15
++ CJ = 3.1283e-06
++ CJSW = 1E-012
++ CJSWG = 1E-012
++ PB = 0.40121
++ PBSW = 1
++ PBSWG = 1
++ MJ = 0.58046
++ MJSW = 0.33
++ MJSWG = 0.33
++ AF = 1
++ EF = 1
++ KF = 0
++ UTE = -0.70993
++ KT1 = -0.4801
++ KT1L = 0
++ KT2 = 0.022
++ UA1 = 1.132E-008
++ UB1 = -2.61E-018
++ UC1 = -5.6E-011
++ AT = 3.3E+004
++ PRT = 8279
++ XTI = 3
++ TCJ = 0.001005
++ TPB = 0
++ TCJSW = 0
++ TPBSW = 0
++ TCJSWG = 0
++ TPBSWG = 0
++ DWC = 0.13047
+.MODEL DDS1 D
++ TNOM = 25
++ IS = 8.655e-10
++ RS = 0.097748
++ N = 1.1102
++ CJO = 1.0793e-15
++ VJ = 0.53178
++ M = 0.49195
++ XTI = -10
++ BV = 30
++ IBV = 0.001
+.MODEL DDS2 D
++ TNOM = 25
++ IS = 8.655e-10
++ RS = 0.097748
++ N = 1.1102
++ CJO = 5.3209e-11
++ VJ = 2.3055
++ M = 0.51385
++ XTI = -10
+.MODEL DGS1 D
++ TNOM = 25
++ IS = 1E-015
+.MODEL DGS2 D
++ TNOM = 25
++ IS = 1E-015
+.ENDS
